@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    background-color: whitesmoke;
+    color: black;
+
+}
+
+
+.container {
+    max-width: 1260px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+/* Nav style start here */
+
+.header {
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav i {
+    font-size: 40px;
+    color: rgb(49, 70, 255);
+
+}
+
+#blck {
+    color: black;
+}
+
+.right {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.profile-logo {
+    max-width: 50px;
+}
+
+/* Nav style end here */
+
+/* Section-1 style start here */
+
+.main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-header img {
+    max-width: 320px;
+    padding: unset;
+
+}
+
+/* Section-1 style end here */
+
+/* search-btn style start here */
+
+.box {
+    text-align: center;
+    padding-top: 60px;
+
+}
+
+.box input {
+    font-size: 17px;
+    padding: 10px 180px;
+    border: solid 1px whitesmoke;
+    border-radius: 35px;
+    box-shadow: 0px 0px 8px gray;
+}
+
+#search-icon {
+    position: relative;
+    left: 50px;
+    font-size: 19px;
+}
+
+#microphone {
+    position: relative;
+    right: 50px;
+    color: rgb(31, 200, 252);
+    font-size: 21px;
+}
+
+#only-smartphone {
+    display: none;
+}
+
+/* search-btn style start here */
+
+.hero-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 130px;
+
+}
+
+
+.text-part h1 {
+    font-size: 45px;
+    line-height: 1.2em;
+}
+
+.text-part p {
+    font-size: 19px;
+    padding-top: 12px;
+    padding-bottom: 18px;
+}
+
+.text-part a {
+    padding: 10px 31px;
+    background-color: rgb(240, 141, 105);
+    border-radius: 15px;
+    color: aliceblue;
+}
+
+
+
+.img-part img {
+    max-width: 670px;
+    border-radius: 10px;
+}
+
+
+/*-----------------------------
+  Responsive Area For Tablet
+------------------------------ */
+
+@media screen and (max-width: 991px) {
+
+
+    /* section-2 style start */
+
+    .text-part h1 {
+        font-size: 40px;
+    }
+
+    .img-part img {
+        max-width: 320px;
+    }
+
+    /* section-2 style end */
+
+
+}
+
+
+/*----------------------------------
+  Responsive Area For Smartphone
+---------------------------------- */
+
+@media screen and (max-width: 768px) {
+
+
+    /* Nav style start here */
+
+    .nav i {
+        font-size: 20px;
+        color: rgb(49, 70, 255);
+
+    }
+
+    #blck {
+        color: black;
+    }
+
+    .right {
+        gap: 15px;
+    }
+
+    .profile-logo {
+        max-width: 25px;
+    }
+
+    /* Nav style end here */
+
+    .main-header img {
+        max-width: 150px;
+
+
+    }
+
+    /* search-btn style start here */
+
+    .desk-tab {
+        display: none;
+    }
+
+    #only-smartphone {
+        display: block;
+    }
+
+
+
+    #only-smartphone {
+        padding: 10px 50px;
+    }
+
+    #only-smartphone:hover {
+        background-color: gray;
+    }
+
+    #search-icon {
+        display: none;
+    }
+
+    #microphone {
+        position: relative;
+        right: -100px;
+        bottom: 35px;
+
+        font-size: 21px;
+    }
+
+
+    /* search-btn style start here */
+
+    /* section-2 style start */
+
+    .hero-1 {
+        flex-direction: column-reverse;
+        padding-top: 45px;
+    }
+
+    .text-part {
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .text-part h1 {
+        font-size: 32px;
+    }
+
+    .text-part p {
+        font-size: 18px;
+    }
+
+    .text-part-btn {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .img-part img {
+        max-width: 100%;
+    }
+
+
+}
